@@ -3,7 +3,6 @@ import { useState } from 'react'
 
 function ListOptions({ setList }) {
 
-
     function handleClick(e) {
          const listID = e.target.id
         fetch(`http://localhost:5000/${listID}`)
@@ -12,10 +11,6 @@ function ListOptions({ setList }) {
                 setList(data);
             });
     };
-
-
- 
-
 
     return (<div className="listOptions">
         <ul>
