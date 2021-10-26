@@ -38,31 +38,36 @@
             "id": 1,
             "item": "Read through Introduction to Client-Side Routing",
             "priority": "high",
-            "completed": "false"
+            "completed": "false",
+            "listName": "shortTermToDo"
         },
         {
             "id": 2,
             "item": "Complete React Router Code-Along",
             "priority": "high",
-            "completed": "false"
+            "completed": "false",
+            "listName": "shortTermToDo"
         },
         {
             "id": 3,
             "item": "Watch all videos in Scrimba Playlist: React Router",
             "priority": "high",
-            "completed": "false"
+            "completed": "false",
+            "listName": "shortTermToDo"
         },
         {
             "id": 4,
             "item": "Attend two community events",
             "priority": "low",
-            "completed": "false"
+            "completed": "false",
+            "listName": "shortTermToDo"
         },
         {
             "id": 5,
             "item": "Schedule 1:1 with Tarric",
             "priority": "low",
-            "completed": "false"
+            "completed": "false",
+            "listName": "shortTermToDo"
         }
     ],
     "longTermToDo": [
@@ -70,71 +75,85 @@
             "id": 1,
             "item": "Research blog topic",
             "priority": "high",
-            "completed": "false"
+            "completed": "false",
+            "listName": "longTermToDo"
         },
         {
             "id": 2,
             "item": "Write first draft of blog",
             "priority": "high",
-            "completed": "false"
+            "completed": "false",
+            "listName": "longTermToDo"
         },
         {
             "id": 3,
             "item": "Network with Flatiron alumns on LinkedIn",
             "priority": "low",
-            "completed": "false"
+            "completed": "false",
+            "listName": "longTermToDo"
         },
         {
             "id": 4,
             "item": "Write elevator pitch",
             "priority": "low",
-            "completed": "false"
+            "completed": "false",
+            "listName": "longTermToDo"
         },
         {
             "id": 5,
             "item": "Research dream job companies",
             "priority": "low",
-            "completed": "false"
+            "completed": "false",
+            "listName": "longTermToDo"
         }
     ],
-    "Pinned": [
+    "pinned": [
         {
             "id": 1,
-            "message": "Lecture Notes https://docs.google.com/document/d/1CpQHvXvFbtI9YWj4tR15EkQqgBB0OUbug8TmGLlOG4k/edit#heading=h.ny484nbphjgi"
+            "item": "Lecture Notes https://docs.google.com/document/d/1CpQHvXvFbtI9YWj4tR15EkQqgBB0OUbug8TmGLlOG4k/edit#heading=h.ny484nbphjgi",
+            "listName": "pinned"
         },
         {
             "id": 2,
-            "message": "Daily Zoom link https://flatironschool.zoom.us/j/93421096785?pwd=WktTSUtKV2c5NUtTdURKYXF3enVxZz09"
+            "item": "Daily Zoom link https://flatironschool.zoom.us/j/93421096785?pwd=WktTSUtKV2c5NUtTdURKYXF3enVxZz09",
+            "listName": "pinned"
         },
         {
             "id": 3,
-            "message": "Topics on Code Challenge: useStates, controlled forms, event listeners, useEffect"
+            "item": "Topics on Code Challenge: useStates, controlled forms, event listeners, useEffect",
+            "listName": "pinned"
         }
     ],
-    "ShoppingList": [
+    "shoppingList": [
         {
             "id": 1,
-            "item": "post-it notes"
+            "item": "post-it notes",
+            "listName": "shoppingList"
         },
         {
             "id": 2,
-            "item": "bread"
+            "item": "bread",
+            "listName": "shoppingList"
         },
         {
             "id": 3,
-            "item": "bananas"
+            "item": "bananas",
+            "listName": "shoppingList"
         },
         {
             "id": 4,
-            "item": "toothpaste"
+            "item": "toothpaste",
+            "listName": "shoppingList"
         },
         {
             "id": 5,
-            "item": "orange juice"
+            "item": "orange juice",
+            "listName": "shoppingList"
         },
         {
             "id": 6,
-            "item": "coffee"
+            "item": "coffee",
+            "listName": "shoppingList"
         }
     ]
 }

@@ -3,13 +3,12 @@ import CalendarWeek from "./CalendarWeek"
 import ToDoListContainer from "./ToDoListContainer"
 
 function App() {
-
-    return 
+    return (
     <div>
       <Header />
-      <CalendarWeek />
+      <CalendarWeek /> 
       <ToDoListContainer/>
-    </div>
+    </div>)
   }
   
 export default App;
