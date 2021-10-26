@@ -1,7 +1,10 @@
 
 
 function CalendarWeek() {
-    return( <div></div>)
+    return( 
+    <div>
+        <h1>CALENDAR COMPONENT RESIDES HERE!</h1>
+    </div>)
 }
 
 export default CalendarWeek
