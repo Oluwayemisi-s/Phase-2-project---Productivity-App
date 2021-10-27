@@ -45,8 +45,8 @@ function FormToDo({ listType, handleNewEntry }) {
                 </label>
 
                 <label> Select priority level:
-                    <select name="priority" onChange={handleInputChange}>
-                        <option disabled selected value="placeholder">Select Priority</option>
+                    <select name="priority" defaultValue = "selected" onChange={handleInputChange}>
+                        <option name = "selected" value="placeholder">Select Priority</option>
                         <option value="high">High</option>
                         <option value="low">Low</option>
                         <option value="none">None</option>

@@ -22,8 +22,15 @@ function CalendarWeek() {
         setEvents([...events, newEntry]);
       }
 
+    function handleEventClick (e) {
+        //e.event.remove()
+        console.log(e.event.title, e.event.start, e.event.end)
+        //alert(`This is your scheduled event:\n${e.event.title} \nOn ${e.event.start}`)
+    }
+
     return (
         <div className="App">
+            <FormCalendar handleNewCalendarEntry={handleNewCalendarEntry}/>
             <FullCalendar
                 plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                 initialView="dayGridWeek"
@@ -39,8 +46,11 @@ function CalendarWeek() {
                     end: 'today prev,next'
                 }}
                 events={events}
+                nowIndicator
+                //dateClick={(e) => console.log(e.dateStr)}
+                eventClick={handleEventClick}
             />
-            <FormCalendar handleNewCalendarEntry={handleNewCalendarEntry}/>
+           
         </div>
     );
 }
