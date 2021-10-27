@@ -22,7 +22,7 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
             title: calendarFormData.title,
             description: calendarFormData.description,
             start: calendarFormData.start,
-            end: null
+            end: calendarFormData.end
         };
 
 
@@ -47,12 +47,12 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
                     <input type="text" name="title" placeholder="Enter your event here..." value={calendarFormData.title} onChange={handleCalendarFormChange} />
                 </label>
 
-                <label> Enter Date:
-                    <input type="date" name="date" value="yyyy-MM-dd" onChange={handleCalendarFormChange} />
+                <label> Enter Start Date and Time:
+                    <input type="datetime" name="start" value={calendarFormData.start} onChange={handleCalendarFormChange} />
                 </label>
 
-                <label> Enter Time:
-                    <input type="time" name="time" value="HH:mm:ss.SSS" onChange={handleCalendarFormChange} />
+                <label> Enter End Date and Time:
+                    <input type="datetime" name="end" value={calendarFormData.end} onChange={handleCalendarFormChange} />
                 </label>
 
                 <label> Enter Details:

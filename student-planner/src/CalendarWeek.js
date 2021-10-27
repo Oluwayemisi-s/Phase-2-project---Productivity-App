@@ -16,7 +16,7 @@ function CalendarWeek() {
         .then((data) => {
           setEvents(data)
         });
-    }, []);
+    }, [events]);
 
     function handleNewCalendarEntry(newEntry) {
         setEvents([...events, newEntry]);
@@ -35,7 +35,7 @@ function CalendarWeek() {
                 }}
                 headerToolbar={{
                     start: 'title',
-                    center: 'dayGridMonth,dayGridWeek,timeGridDay',
+                    center: 'dayGridMonth,dayGridWeek,timeGridDay new',
                     end: 'today prev,next'
                 }}
                 events={events}
