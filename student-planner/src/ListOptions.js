@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 function ListOptions({ setList, setListType, setformView }) {
 
@@ -14,12 +14,20 @@ function ListOptions({ setList, setListType, setformView }) {
     };
 
     return (<div className="listOptions">
-        <ul>
-            <li className="listOptions" id="shortTermToDo" onClick={handleClick}>Short Term To Dos</li>
-            <li className="listOptions" id="longTermToDo" onClick={handleClick}>Long Term To Dos</li>
-            <li className="listOptions" id="pinned" onClick={handleClick}>Pinned Items</li>
-            <li className="listOptions" id="shoppingList" onClick={handleClick}>Shopping List</li>
-        </ul>
+            <ul>
+                <Link to={`/shortTermToDo`}>
+                    <li className="listOptions" id="shortTermToDo" onClick={handleClick}>Short Term To Dos</li>
+                </Link>
+                <Link to={`/longTermToDo`}>
+                    <li className="listOptions" id="longTermToDo" onClick={handleClick}>Long Term To Dos</li>
+                </Link>
+                <Link to={`/pinned`}>
+                    <li className="listOptions" id="pinned" onClick={handleClick}>Pinned Items</li>
+                </Link>
+                <Link to={`/shoppingList`}>
+                    <li className="listOptions" id="shoppingList" onClick={handleClick}>Shopping List</li>
+                </Link>
+            </ul>
     </div>
     )
 

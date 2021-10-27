@@ -21,7 +21,7 @@ function ToDoListContainer() {
 
   return <div>
     <ListOptions setList={setList} setListType={setListType} setformView={setformView}/>
-    <ul>
+    <ul id="toDoLists">
       {list.map(entry => <ListDetail key={entry.id} entry={entry} handleDeleteEntry={handleDeleteEntry} />)}
     </ul>
     {formView ? <FormToDo listType={listType} handleNewEntry={handleNewEntry}/> : null}
