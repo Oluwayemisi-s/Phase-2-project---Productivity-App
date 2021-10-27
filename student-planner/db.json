@@ -68,6 +68,13 @@
       "priority": "low",
       "completed": false,
       "listName": "shortTermToDo"
+    },
+    {
+      "item": "feed dog",
+      "priority": "low",
+      "listName": "",
+      "completed": false,
+      "id": 6
     }
   ],
   "longTermToDo": [
@@ -105,6 +112,27 @@
       "priority": "low",
       "completed": false,
       "listName": "longTermToDo"
+    },
+    {
+      "item": "test",
+      "priority": "",
+      "listName": "longTermToDo",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "item": "test",
+      "priority": "low",
+      "listName": "longTermToDo",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "item": "test",
+      "priority": "high",
+      "listName": "longTermToDo",
+      "completed": false,
+      "id": 8
     }
   ],
   "pinned": [
@@ -112,19 +140,22 @@
       "id": 1,
       "item": "Lecture Notes https://docs.google.com/document/d/1CpQHvXvFbtI9YWj4tR15EkQqgBB0OUbug8TmGLlOG4k/edit#heading=h.ny484nbphjgi",
       "listName": "pinned",
-      "completed": false
+      "completed": false,
+      "priority": "none"
     },
     {
       "id": 2,
       "item": "Daily Zoom link https://flatironschool.zoom.us/j/93421096785?pwd=WktTSUtKV2c5NUtTdURKYXF3enVxZz09",
       "listName": "pinned",
-      "completed": false
+      "completed": false,
+      "priority": "none"
     },
     {
       "id": 3,
       "item": "Topics on Code Challenge: useStates, controlled forms, event listeners, useEffect",
       "listName": "pinned",
-      "completed": false
+      "completed": false,
+      "priority": "none"
     }
   ],
   "shoppingList": [
@@ -132,37 +163,43 @@
       "id": 1,
       "item": "post-it notes",
       "listName": "shoppingList",
-      "completed": false
+      "completed": false,
+      "priority": "none"
     },
     {
       "id": 2,
       "item": "bread",
       "listName": "shoppingList",
-      "completed": false
+      "completed": false,
+      "priority": "none"
     },
     {
       "id": 3,
       "item": "bananas",
       "listName": "shoppingList",
-      "completed": false
+      "completed": false,
+      "priority": "none"
     },
     {
       "id": 4,
       "item": "toothpaste",
       "listName": "shoppingList",
-      "completed": false
+      "completed": false,
+      "priority": "none"
     },
     {
       "id": 5,
       "item": "orange juice",
       "listName": "shoppingList",
-      "completed": false
+      "completed": false,
+      "priority": "none"
     },
     {
       "id": 6,
       "item": "coffee",
       "listName": "shoppingList",
-      "completed": false
+      "completed": false,
+      "priority": "none"
     }
   ]
 }
