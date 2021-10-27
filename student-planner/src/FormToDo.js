@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-function FormToDo({ listType }) {
+function FormToDo({ listType, handleNewEntry }) {
     const [formData, setFormData] = useState({
         item: "",
         listName: listType,
@@ -32,7 +32,7 @@ function FormToDo({ listType }) {
             body: JSON.stringify(entryData),
         })
             .then((r) => r.json())
-            .then((entryData) => console.log(entryData));
+            .then((entryData) => handleNewEntry(entryData));
     }
 
 

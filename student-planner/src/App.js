@@ -3,12 +3,13 @@ import CalendarWeek from "./CalendarWeek"
 import ToDoListContainer from "./ToDoListContainer"
 
 function App() {
-    return (
+
+  return (
     <div>
       <Header />
-      <CalendarWeek /> 
-      <ToDoListContainer/>
+      <CalendarWeek  />
+      <ToDoListContainer />
     </div>)
-  }
-  
+}
+
 export default App;

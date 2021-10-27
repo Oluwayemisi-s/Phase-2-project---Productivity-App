@@ -24,7 +24,7 @@ function ToDoListContainer() {
     <ul>
       {list.map(entry => <ListDetail key={entry.id} entry={entry} handleDeleteEntry={handleDeleteEntry} />)}
     </ul>
-    {formView ? <FormToDo listType={listType} /> : null}
+    {formView ? <FormToDo listType={listType} handleNewEntry={handleNewEntry}/> : null}
   </div>
 }
 
