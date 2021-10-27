@@ -31,6 +31,7 @@ function CalendarWeek() {
     return (
         <div className="App">
             <FormCalendar handleNewCalendarEntry={handleNewCalendarEntry}/>
+
             <FullCalendar
                 plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                 initialView="dayGridWeek"
