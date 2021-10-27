@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div#toDoListSection {
+display: flex;
+flex-direction: row;
+justify-content:left;
+}
+
+#listOptionsSection {
+  flex-grow: 1
+}
+
+#toDoLists {
+  flex-grow: 2
+}
