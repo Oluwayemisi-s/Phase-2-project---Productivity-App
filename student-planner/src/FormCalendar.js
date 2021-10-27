@@ -39,7 +39,7 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
             body: JSON.stringify(entryData),
         })
             .then((r) => r.json())
-            .then((entryData) => console.log(entryData));
+            .then((entryData) => handleNewCalendarEntry(entryData));
     }
 
     return (

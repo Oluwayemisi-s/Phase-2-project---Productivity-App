@@ -1,8 +1,8 @@
 import ListOptions from "./ListOptions"
 import { useState } from 'react'
 import FormToDo from "./FormToDo"
-
 import ListDetail from "./ListDetail"
+import styled from "styled-components"
 
 function ToDoListContainer() {
   const [list, setList] = useState([])
@@ -19,13 +19,21 @@ function ToDoListContainer() {
     setList([...list, newEntry])
   }
 
-  return <div>
-    <ListOptions setList={setList} setListType={setListType} setformView={setformView}/>
-    <ul id="toDoLists">
-      {list.map(entry => <ListDetail key={entry.id} entry={entry} handleDeleteEntry={handleDeleteEntry} />)}
-    </ul>
-    {formView ? <FormToDo listType={listType} handleNewEntry={handleNewEntry}/> : null}
-  </div>
+  return (
+    // <Container>
+    <div id="toDoListSection">
+      <ListOptions setList={setList} setListType={setListType} setformView={setformView} />
+      <ul id="toDoLists">
+        {list.map(entry => <ListDetail key={entry.id} entry={entry} handleDeleteEntry={handleDeleteEntry} />)}
+      </ul>
+      {formView ? <FormToDo listType={listType} handleNewEntry={handleNewEntry} /> : null}
+      </div>
+    // </Container>
+  )
 }
 
 export default ToDoListContainer;
+
+// const Container = styled.div`
+// background: blue;
+// `
