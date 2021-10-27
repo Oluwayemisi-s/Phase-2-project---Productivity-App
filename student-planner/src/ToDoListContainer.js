@@ -6,6 +6,8 @@ import ListDetail from "./ListDetail"
 
 function ToDoListContainer() {
   const [list, setList] = useState([])
+  const [listType, setListType] = useState([])
+  const [formView, setformView] = useState(false)
 
 
   function handleDeleteEntry(deletedEntry) {
@@ -13,12 +15,16 @@ function ToDoListContainer() {
     setList(updatedList)
   }
 
+  function handleNewEntry(newEntry) {
+    setList([...list, newEntry])
+  }
+
   return <div>
-    <ListOptions setList={setList} />
+    <ListOptions setList={setList} setListType={setListType} setformView={setformView}/>
     <ul>
       {list.map(entry => <ListDetail key={entry.id} entry={entry} handleDeleteEntry={handleDeleteEntry} />)}
     </ul>
-    <FormToDo />
+    {formView ? <FormToDo listType={listType} handleNewEntry={handleNewEntry}/> : null}
   </div>
 }
 

@@ -1,14 +1,15 @@
-import { useState } from 'react'
 
 
-function ListOptions({ setList }) {
+function ListOptions({ setList, setListType, setformView }) {
 
     function handleClick(e) {
-         const listID = e.target.id
+        const listID = e.target.id
         fetch(`http://localhost:5000/${listID}`)
             .then((response) => response.json())
             .then((data) => {
                 setList(data);
+                setListType(listID)
+                setformView(true)
             });
     };
 
