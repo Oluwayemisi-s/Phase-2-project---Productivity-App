@@ -8,7 +8,7 @@ import PassionContentForm from "./PassionContentForm"
 
 function App() {
   const [passion, setPassion] = useState([])
-  const [passionContent, setPassionContent] = useState(false)
+  const [passionContent, setPassionContent] = useState(true)
   const [showForm, setShowForm] = useState(false)
   const [passionForm, setPassionForm] = useState({
     focus: "",
@@ -20,25 +20,19 @@ function App() {
         .then (resp => resp.json())
         .then (data => setPassion(data))
   }, [])
-  
-
-  function handleShowPassionButtonClick (){
-    console.log("i have been clicked")
-    setPassionContent(current => !current)
-    setShowForm(current => !current)
-  }
 
   function handleHidePassionButtonClick (){
     console.log("i have been clicked")
     setShowForm(current => !current)
+    setPassionContent(current => !current)
   }
 
   return (
     <div>
       <BrowserRouter>
         <Header />
-        {passionContent ? <button onClick = {handleShowPassionButtonClick}>Show my Focus and gratitude for the day</button> : <button onClick = {handleHidePassionButtonClick}>Click HERE to enter a new focus and gratitude for the day!</button>}
-        {showForm ? <PassionContentForm form = {passionForm} setForm = {setPassionForm} setPassion = {setPassion} setShowForm = {setShowForm}/> : <PassionContent passion = {passion}/>}
+        {showForm ? <PassionContentForm form = {passionForm} setForm = {setPassionForm} setPassion = {setPassion} setShowForm = {setShowForm} setPassionContent = {setPassionContent}/> : <PassionContent passion = {passion}/>}
+        <button onClick = {handleHidePassionButtonClick}> {passionContent ? "Click HERE to enter a new focus and gratitude for the day!" : "Hide Form" }</button>
         <CalendarWeek />
         <ToDoListContainer />
       </BrowserRouter>

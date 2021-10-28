@@ -1,5 +1,5 @@
 
-export default function PassionContentForm ({form, form : {focus, grateful}, setForm, setPassion, setShowForm}){
+export default function PassionContentForm ({form, form : {focus, grateful}, setForm, setPassion, setShowForm, setPassionContent}){
     
     function handleFormInput (e){
         
