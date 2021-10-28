@@ -84,7 +84,7 @@
       "id": 1,
       "item": "Read through Introduction to Client-Side Routing",
       "priority": "high",
-      "completed": false,
+      "completed": true,
       "listName": "shortTermToDo"
     },
     {

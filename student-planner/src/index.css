@@ -59,10 +59,10 @@ nav a {
   border-radius: 10px;
   color: rgba(28, 17, 68);
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid rgb(28, 17, 68);
   font-family: SS Nickson One;
   color: rgba(28, 17, 68);
-  box-shadow: 0 0 5px 2px #130930 inset;
+  box-shadow: 0 0 5px 2px #716a86 inset;
 }
 
 #calendarForm {
@@ -91,9 +91,9 @@ label {
   border-radius: 10px;
   color: rgba(28, 17, 68);
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid #716a86;
   font-family: SS Nickson One;
-  box-shadow: 0 0 5px 2px #130930 inset;
+  box-shadow: 0 0 5px 2px #716a86 inset;
 }
 
 div#calendarOnly {
@@ -154,6 +154,14 @@ h3 {
   color: rgba(28, 17, 68);
   border: 1px solid white;
   font-family: SS Nickson One;
+}
+
+#complete {
+  text-decoration: none;
+}
+
+#incomplete {
+  text-decoration: line-through;
 }
 
 #formToDoSubmit {

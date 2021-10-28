@@ -73,7 +73,6 @@ function CalendarWeek() {
                 eventClick={handleEventClick}
             />
 
-
         </div>
     );
 }

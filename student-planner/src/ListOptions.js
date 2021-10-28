@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-function ListOptions({ setList, setListType, setformView }) {
+function ListOptions({ setList, setListType, setformView, renderToDoListTitle }) {
 
     function handleClick(e) {
         const listID = e.target.id
@@ -10,12 +10,13 @@ function ListOptions({ setList, setListType, setformView }) {
                 setList(data);
                 setListType(listID)
                 setformView(true)
+                renderToDoListTitle(listID)
             });
     };
 
     return (<div className="listOptions" id="listOptionsSection">
         <ul>
-            <Link to={`/shortTermToDo`} style={{textDecoration: 'none'}}>
+            <Link to={`/shortTermToDo`} style={{textDecoration: 'none'}} activeStyle={{ color: 'red' }}>
                 <li className="listOptions" id="shortTermToDo" onClick={handleClick}>Short Term To Dos</li>
             </Link>
             <Link to={`/longTermToDo`} style={{textDecoration: 'none'}}>
