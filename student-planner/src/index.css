@@ -8,6 +8,11 @@
   src: url(./fonts/SS_Nickson_One.otf);
 }
 
+@font-face {
+  font-family: cream-DEMO;
+  src: url(./fonts/cream-DEMO.ttf);
+}
+
 button:hover {
   cursor: pointer;
   box-shadow: 0 0 20px white;
@@ -83,19 +88,86 @@ nav a {
   font-size: 15px;
 }
 
+#focusSection {
+  background-color: rgb(115, 250, 221, .90);
+  font-family: SS Nickson One;
+  padding-bottom: 20px;
+  margin-left: 20%;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 60%;
+  border-radius: 20px;
+  border: 1px solid rgba(28, 17, 68);
+}
+
+button[type=submit]#focusSectionButton {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  background-color: rgb(243, 160, 174);
+  border-radius: 10px;
+  color: rgba(28, 17, 68);
+  padding: 5px;
+  border: 1px solid white;
+  font-family: SS Nickson One;
+}
+
+#passionContentForm {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+ #focusDetail {
+  background-color: rgb(255, 255, 255, 0.50);
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+} 
+
+h3.focusDetailTextFocus {
+  font-family: ELEGANT  Personal use;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(28, 17, 68);
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+h3.focusDetailTextGratitude {
+  font-family: ELEGANT  Personal use;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(28, 17, 68);
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+button#passionFormSubmit {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  background-color: rgb(115, 250, 221);
+  border-radius: 10px;
+  color: rgba(28, 17, 68);
+  padding: 5px;
+  border: 1px solid white;
+  font-family: SS Nickson One;
+}
+
 #calendarSection {
   background-color: rgb(243, 160, 174, .90);
 }
 
 #calendarForm {
-  /* background-color: rgb(243, 160, 174, .90); */
   text-align:center;
   color: rgba(28, 17, 68);
   padding: 20px; 
-  /* width: 80%; */
   margin-bottom: 0px;
   font-family: SS Nickson One;
-
+  background-color: rgb(243, 160, 174, .90);
 }
 
 input {
@@ -122,6 +194,7 @@ label {
   color: rgba(28, 17, 68);
   margin-top: 0px;
   border: 1px solid white;
+  background-color: rgb(243, 160, 174, .90);
 }
 
 h4.eventDetailClass {
@@ -162,13 +235,14 @@ div#calendarOnly {
   margin: 0 auto;
   padding-bottom:40px;
   font-family: SS Nickson One;
+  font-family: cream-DEMO;
 }
-
 
 div#toDoListSection {
 display: flex;
 flex-direction: row;
 justify-content:center;
+margin-top: 40px;
 }
 
 #listOptionsSection {
@@ -206,7 +280,7 @@ Link {
   text-decoration:none; 
 }
 
-h3 {
+h3#toDoListTitleText {
   font-family: ELEGANT  Personal use;
   font-size: 30px;
   text-align: center;
@@ -252,11 +326,6 @@ h3 {
   padding: 20px; 
   margin: auto;
   font-family: SS Nickson One;
+  font-size: 20px;
 }
 
-.fc { /* the calendar root */
-  width: 1000px;
-  height: 400px;
-  margin: 0 auto;
-  padding-bottom:40px;
-}

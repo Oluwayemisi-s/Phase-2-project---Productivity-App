@@ -46,7 +46,7 @@ function CalendarWeek() {
     }
 
     return (
-        <div className="App" id="calendarSection">
+        <div className="App">
             <FormCalendar handleNewCalendarEntry={handleNewCalendarEntry} />
             {eventClick ? <EventDetail eventClick={eventClick} setEventClick={setEventClick} title={eventClick.event.title} id={eventClick.event.id} start={eventClick.event.startStr} end={eventClick.event.endStr} /> : null}
             <div id="calendarOnly">

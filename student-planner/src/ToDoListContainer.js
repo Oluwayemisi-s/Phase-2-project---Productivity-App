@@ -39,7 +39,7 @@ function ToDoListContainer() {
     <div id="toDoListSection">
       <ListOptions setList={setList} setListType={setListType} setformView={setformView} renderToDoListTitle={renderToDoListTitle} />
       <div id="listAndForm">
-        <h3>{toDoListTitle}</h3>
+        <h3 id="toDoListTitleText">{toDoListTitle}</h3>
         <ul>
           {list.map(entry => <ListDetail key={entry.id} entry={entry} handleDeleteEntry={handleDeleteEntry} />)}
         </ul>
