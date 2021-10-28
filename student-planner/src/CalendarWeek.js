@@ -34,10 +34,10 @@ function CalendarWeek() {
         //e.event.remove()
         //console.log(e.event.remove())
         //console.log(e.event)
-       
+
     }
 
-    function handleShowEvent (e){
+    function handleShowEvent(e) {
         //console.log(e)
         // return(
 
@@ -48,31 +48,32 @@ function CalendarWeek() {
     return (
         <div className="App" id="calendarSection">
             <FormCalendar handleNewCalendarEntry={handleNewCalendarEntry} />
-            {eventClick ? <EventDetail eventClick = {eventClick} setEventClick = {setEventClick} title = {eventClick.event.title} id = {eventClick.event.id} start = {eventClick.event.startStr} end = {eventClick.event.endStr}/> : null}
-            <FullCalendar
-                plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-                initialView="dayGridWeek"
-                customButtons={{
-                    new: {
-                        text: 'new',
-                        click: () => console.log('new event'),
-                    },
-                }}
-                headerToolbar={{
-                    start: 'title',
-                    center: 'dayGridMonth,dayGridWeek,timeGridDay new',
-                    end: 'today prev,next'
-                }}
-                events={events}
-                nowIndicator
-                editable={true}
-                selectable={true}
-                //dateClick={(e) => console.log(e.dateStr)}
-                //eventClick={handleEventClick}
-                eventContent={handleShowEvent}
-                eventClick={handleEventClick}
-            />
-
+            {eventClick ? <EventDetail eventClick={eventClick} setEventClick={setEventClick} title={eventClick.event.title} id={eventClick.event.id} start={eventClick.event.startStr} end={eventClick.event.endStr} /> : null}
+            <div id="calendarOnly">
+                <FullCalendar
+                    plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+                    initialView="dayGridWeek"
+                    customButtons={{
+                        new: {
+                            text: 'new',
+                            click: () => console.log('new event'),
+                        },
+                    }}
+                    headerToolbar={{
+                        start: 'title',
+                        center: 'dayGridMonth,dayGridWeek,timeGridDay new',
+                        end: 'today prev,next'
+                    }}
+                    events={events}
+                    nowIndicator
+                    editable={true}
+                    selectable={true}
+                    //dateClick={(e) => console.log(e.dateStr)}
+                    //eventClick={handleEventClick}
+                    eventContent={handleShowEvent}
+                    eventClick={handleEventClick}
+                />
+            </div>
         </div>
     );
 }

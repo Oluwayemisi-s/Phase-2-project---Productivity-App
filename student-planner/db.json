@@ -84,7 +84,7 @@
       "id": 1,
       "item": "Read through Introduction to Client-Side Routing",
       "priority": "high",
-      "completed": true,
+      "completed": false,
       "listName": "shortTermToDo"
     },
     {
@@ -149,7 +149,7 @@
       "id": 2,
       "item": "Write first draft of blog",
       "priority": "high",
-      "completed": false,
+      "completed": true,
       "listName": "longTermToDo"
     },
     {

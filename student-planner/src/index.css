@@ -156,11 +156,11 @@ h3 {
   font-family: SS Nickson One;
 }
 
-#complete {
+#incomplete {
   text-decoration: none;
 }
 
-#incomplete {
+#complete {
   text-decoration: line-through;
 }
 
