@@ -4,7 +4,6 @@ import { useState } from "react"
 function FormCalendar({ listType, handleNewCalendarEntry }) {
     const [calendarFormData, setCalendarFormData] = useState({
         "title": "",
-        "description": "",
         "start": "",
         "end": ""
     })
@@ -39,7 +38,14 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
             body: JSON.stringify(entryData),
         })
             .then((r) => r.json())
-            .then((entryData) => handleNewCalendarEntry(entryData));
+            .then((entryData) => {
+                handleNewCalendarEntry(entryData)
+                setCalendarFormData({
+                    "title": "",
+                    "start": "",
+                    "end": ""
+                })
+            });
     }
 
     return (
@@ -53,7 +59,6 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
                     <input type="text" name="description" placeholder="Details..." value={calendarFormData.description} onChange={handleCalendarFormChange} />
                 </label> */}
 
-
                 <label> Start Date/Time: 
                     <input type="datetime" name="start" placeholder = "2021-10-25, 10:30:00" value={calendarFormData.start} onChange={handleCalendarFormChange} />
                 </label>
@@ -61,6 +66,7 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
                 <label> End Date/Time: 
                     <input type="datetime" name="end" placeholder = "2021-10-25, 10:30:00" value={calendarFormData.end} onChange={handleCalendarFormChange} />
                 </label>
+
 
 
                 

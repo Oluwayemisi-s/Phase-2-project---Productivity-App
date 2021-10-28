@@ -2,7 +2,7 @@ import ListOptions from "./ListOptions"
 import { useState } from 'react'
 import FormToDo from "./FormToDo"
 import ListDetail from "./ListDetail"
-import styled from "styled-components"
+//import styled from "styled-components"
 
 function ToDoListContainer() {
   const [list, setList] = useState([])

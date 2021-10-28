@@ -2,146 +2,81 @@
   "events": [
     {
       "id": 1,
-      "title": "Doctor appointment",
-      "description": "with Dr. Kuo at Sherwood Hospital",
+      "title": "Doctor appointment with Dr. Kuo at Sherwood Hospital",
       "start": "2021-10-25T10:30:00",
       "end": "2021-10-25T11:30:00"
     },
     {
       "id": 2,
-      "title": "Dinner with parents",
-      "description": "don't forget to bring flowers",
+      "title": "Dinner with parents - don't forget to bring flowers",
       "start": "2021-10-28T18:30:00",
       "end": "2021-10-28T20:30:00"
     },
     {
       "id": 3,
-      "title": "Pick up Sean from the airport",
-      "description": "flight number DL1307",
+      "title": "Pick up Sean from the airport - flight number DL1307",
       "start": "2021-10-30T21:30:00",
       "end": "2021-10-30T22:00:00"
     },
     {
       "id": 4,
-      "title": "Code Challenge",
-      "description": "REACT forms, useEffect, and useState",
+      "title": "Code Challenge - REACT forms, useEffect, and useState",
       "start": "2021-10-29T11:00:00",
       "end": "2021-10-29T13:0:00"
     },
     {
-      "title": "testing123",
-      "description": "please work",
-      "start": "",
-      "end": null,
-      "id": 5
-    },
-    {
-      "title": "",
-      "description": "",
-      "start": "",
-      "end": null,
-      "id": 6
-    },
-    {
-      "title": "test",
-      "description": "please work",
-      "start": "",
-      "end": null,
-      "id": 7
-    },
-    {
-      "title": "test",
-      "description": "test",
-      "start": "2021-10-27T10:30:00",
-      "end": null,
-      "id": 8
-    },
-    {
       "title": "testing!",
-      "description": "pelase work",
       "start": "2021-10-25T10:30:00",
       "end": "2021-10-25T11:30:00",
       "id": 9
     },
     {
       "title": "lalalalal",
-      "description": "help",
       "start": "2021-10-26T10:30:00",
       "end": "2021-10-26T12:30:00",
       "id": 10
     },
     {
       "title": "testing",
-      "description": "just for test",
       "start": "2021-10-27T08:30:00",
       "end": "2021-10-27T09:00:00",
       "id": 11
     },
     {
-      "title": "testing",
-      "description": "just for test",
-      "id": 12
-    },
-    {
-      "title": "",
-      "description": "",
-      "id": 13
-    },
-    {
       "title": "test",
-      "description": "just for test",
       "start": "2021-10-27 T 08:30:00",
       "end": "2021-10-27 T 09:00:00",
       "id": 14
     },
     {
-      "title": "test",
-      "description": "just for test",
-      "start": "2021-10-27T08:30:00",
-      "end": "2021-10-27T09:00:00",
-      "id": 15
-    },
-    {
       "title": "lisatest",
-      "description": "",
       "start": "2021-10-27T 09:00:00",
       "end": "2021-10-27T 09:30:00",
       "id": 16
     },
     {
-      "title": "lisatest",
-      "description": "",
-      "start": "2021-10-27T 11:30:00",
-      "end": "2021-10-27T 12:30:00",
-      "id": 17
-    },
-    {
-      "title": "LISATEST",
-      "description": "",
-      "start": "2021-10-27T 11:30:00",
-      "end": "2021-10-27T 12:30:00",
-      "id": 18
-    },
-    {
-      "title": "LISATEST",
-      "description": "",
-      "start": "2021-10-27T 11:30:00",
-      "end": "2021-10-27T 12:30:00",
-      "id": 19
-    },
-    {
       "title": "LISATESTPLEASEWORK",
-      "description": "",
       "start": "2021-10-27T10:45:00",
       "end": "2021-10-27T11:30:00",
       "id": 20
     },
     {
-      "title": "",
-      "description": "",
-      "start": "T",
-      "end": "T",
+      "title": "going to see my sister before she travels",
+      "start": "2021-10-27T08:30:00",
+      "end": "2021-10-27T09:00:00",
       "id": 21
+    },
+    {
+      "title": "trying out the space",
+      "start": "2021-10-27T 08:30:00",
+      "end": "2021-10-27T18:00:00",
+      "id": 23
+    },
+    {
+      "title": "going over it",
+      "start": "2021-10-28T08:30:00",
+      "end": "2021-10-28T09:00:00",
+      "id": 24
     }
   ],
   "shortTermToDo": [
@@ -156,7 +91,7 @@
       "id": 2,
       "item": "Complete React Router Code-Along",
       "priority": "high",
-      "completed": true,
+      "completed": false,
       "listName": "shortTermToDo"
     },
     {
@@ -186,6 +121,20 @@
       "listName": "",
       "completed": false,
       "id": 6
+    },
+    {
+      "item": "i need to complete this",
+      "priority": "low",
+      "listName": "shortTermToDo",
+      "completed": true,
+      "id": 7
+    },
+    {
+      "item": "i need to complete this",
+      "priority": "high",
+      "listName": "shortTermToDo",
+      "completed": false,
+      "id": 8
     }
   ],
   "longTermToDo": [
@@ -288,7 +237,7 @@
       "id": 6,
       "item": "coffee",
       "listName": "shoppingList",
-      "completed": false,
+      "completed": true,
       "priority": "none"
     }
   ]
