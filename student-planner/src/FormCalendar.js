@@ -4,7 +4,6 @@ import { useState } from "react"
 function FormCalendar({ listType, handleNewCalendarEntry }) {
     const [calendarFormData, setCalendarFormData] = useState({
         "title": "",
-        "description": "",
         "start": "",
         "end": ""
     })
@@ -39,7 +38,14 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
             body: JSON.stringify(entryData),
         })
             .then((r) => r.json())
-            .then((entryData) => handleNewCalendarEntry(entryData));
+            .then((entryData) => {
+                handleNewCalendarEntry(entryData)
+                setCalendarFormData({
+                    "title": "",
+                    "start": "",
+                    "end": ""
+                })
+            });
     }
 
     return (
@@ -49,21 +55,22 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
                     <input type="text" name="title" placeholder="Enter your event here..." value={calendarFormData.title} onChange={handleCalendarFormChange} />
                 </label>
 
-                <label> Additional information:
+                {/* <label> Additional information:
                     <input type="text" name="description" placeholder="Details..." value={calendarFormData.description} onChange={handleCalendarFormChange} />
-                </label>
+                </label> */}
 
-                <br/>
+              
 
                 <label> Start Date and Time:
-                    <input type="datetime" name="start" placeholder = "2021-10-25, 10:30:00" value={calendarFormData.start} onChange={handleCalendarFormChange} />
-                </label>
-                
-                <label> Enter End Date and Time:
-                    <input type="datetime" name="end" placeholder = "2021-10-25, 10:30:00" value={calendarFormData.end} onChange={handleCalendarFormChange} />
+                    <input type="datetime" name="start" placeholder = "2021-10-25,10:30:00" value={calendarFormData.start} onChange={handleCalendarFormChange} />
                 </label>
 
-                <br/>
+
+                <label> End Date and Time:
+                    <input type="datetime" name="end" placeholder = "2021-10-25,10:30:00" value={calendarFormData.end} onChange={handleCalendarFormChange} />
+                </label>
+
+               
                 
                 <button type="submit"> Submit </button>
             </form>
