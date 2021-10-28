@@ -51,8 +51,8 @@ function CalendarWeek() {
                     nowIndicator
                     //dateClick={(e) => console.log(e.dateStr)}
                     eventClick={handleEventClick}
-                    // height="100%"
-                />
+                   
+                   />
             </div>
         </div>
     );
