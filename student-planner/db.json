@@ -149,7 +149,7 @@
       "id": 2,
       "item": "Write first draft of blog",
       "priority": "high",
-      "completed": true,
+      "completed": false,
       "listName": "longTermToDo"
     },
     {
@@ -186,7 +186,7 @@
       "id": 2,
       "item": "Daily Zoom link https://flatironschool.zoom.us/j/93421096785?pwd=WktTSUtKV2c5NUtTdURKYXF3enVxZz09",
       "listName": "pinned",
-      "completed": false,
+      "completed": true,
       "priority": "none"
     },
     {
@@ -239,6 +239,13 @@
       "listName": "shoppingList",
       "completed": true,
       "priority": "none"
+    }
+  ],
+  "passion": [
+    {
+      "id": 1,
+      "focus": "focus on my project",
+      "grateful": "grateful for my health"
     }
   ]
 }
