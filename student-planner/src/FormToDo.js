@@ -32,7 +32,14 @@ function FormToDo({ listType, handleNewEntry }) {
             body: JSON.stringify(entryData),
         })
             .then((r) => r.json())
-            .then((entryData) => handleNewEntry(entryData));
+            .then((entryData) => {
+                handleNewEntry(entryData)
+                setFormData({
+                    item: "",
+                    listName: listType,
+                    priority: "",
+                    completed: false})
+            });
     }
 
 
