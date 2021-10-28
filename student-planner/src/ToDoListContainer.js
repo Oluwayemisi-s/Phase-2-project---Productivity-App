@@ -21,13 +21,16 @@ function ToDoListContainer() {
 
   return (
     // <Container>
-    <div id="toDoListSection">
+     <div id="toDoListSection"> 
       <ListOptions setList={setList} setListType={setListType} setformView={setformView} />
-      <ul id="toDoLists">
+      <div id="listAndForm">
+      <h3>{listType}</h3>
+      <ul>
         {list.map(entry => <ListDetail key={entry.id} entry={entry} handleDeleteEntry={handleDeleteEntry} />)}
       </ul>
       {formView ? <FormToDo listType={listType} handleNewEntry={handleNewEntry} /> : null}
-      </div>
+       </div> 
+       </div>
     // </Container>
   )
 }
@@ -35,5 +38,5 @@ function ToDoListContainer() {
 export default ToDoListContainer;
 
 // const Container = styled.div`
-// background: blue;
+// background-color: blue;
 // `

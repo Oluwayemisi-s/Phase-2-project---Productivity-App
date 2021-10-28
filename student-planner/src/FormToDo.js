@@ -45,13 +45,13 @@ function FormToDo({ listType, handleNewEntry }) {
 
 
     return (
-        <div>
+        <div id="formToDo">
             <form onSubmit={handleSubmit}>
                 <label> New Task:
                     <input type="text" name="item" placeholder="Enter your task here..." value={formData.item} onChange={handleInputChange} />
                 </label>
 
-                <label> Select priority level:
+                <label> Priority level: 
                     <select name="priority" defaultValue = "selected" onChange={handleInputChange}>
                         <option name = "selected" value="placeholder">Select Priority</option>
                         <option value="high">High</option>
@@ -59,7 +59,7 @@ function FormToDo({ listType, handleNewEntry }) {
                         <option value="none">None</option>
                     </select>
                 </label>
-                <button type="submit"> Submit </button>
+                <button id="formToDoSubmit" type="submit"> Submit </button>
 
             </form>
         </div>

@@ -26,6 +26,7 @@ function CalendarWeek() {
     }
 
     function handleEventClick(e) {
+
         setEventClick(e)
         //console.log(e.event.start)
         //alert(`This is your scheduled event:\n${e.event.title} \nOn ${e.event.start}`)
@@ -42,11 +43,10 @@ function CalendarWeek() {
 
         //     <small>{e.event.title}</small>
         // )
-
     }
 
     return (
-        <div className="App">
+        <div className="App" id="calendarSection">
             <FormCalendar handleNewCalendarEntry={handleNewCalendarEntry} />
             {eventClick ? <EventDetail eventClick = {eventClick} setEventClick = {setEventClick} title = {eventClick.event.title} id = {eventClick.event.id} start = {eventClick.event.startStr} end = {eventClick.event.endStr}/> : null}
             <FullCalendar
@@ -72,6 +72,7 @@ function CalendarWeek() {
                 eventContent={handleShowEvent}
                 eventClick={handleEventClick}
             />
+
 
         </div>
     );
