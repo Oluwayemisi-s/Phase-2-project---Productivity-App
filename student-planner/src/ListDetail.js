@@ -5,9 +5,7 @@ function ListDetail({ entry, handleDeleteEntry }) {
 
     const [completed, setCompleted] = useState(entry.completed)
     const [completedIdName, setCompletedIdName] = useState(false)
-
-    //console.log(completed)
-    //console.log(completed)
+    const priority = entry.priority
 
     function handleDelete(e) {
         const listID = e.target.name
@@ -18,15 +16,6 @@ function ListDetail({ entry, handleDeleteEntry }) {
             .then(resp => resp.json())
             .then(() => handleDeleteEntry(entry))
     }
-
-    // function completeCrossOut() {
-    //     let button = document.getElementsByClassName("toDoListCompletedButton")
-    //     if (completed === false) {
-    //         button.id = "incomplete"
-    //     } else {
-    //         button.id = "complete"
-    //     }
-    // }
 
     function handleCompleted(e) {
         const listID = e.target.name
@@ -50,7 +39,7 @@ function ListDetail({ entry, handleDeleteEntry }) {
 
     return (
         <div>
-            <li id={completedIdName ? "complete" : "incomplete"} className="toDoListEntryItem">{entry.item}
+            <li id={completedIdName ? "complete" : "incomplete"} className={priority === "low" || priority === "none" ? "toDoListEntryItemLow" : "toDoListEntryItemHigh" } >{entry.item}
                 <button className="toDoListEntryButton" name={entry.listName} onClick={handleCompleted}>{completed ? "Mark as incomplete" : "Mark as Complete"}</button>
 
                 <button className="toDoListEntryButton" name={entry.listName} onClick={handleDelete}>Delete</button>

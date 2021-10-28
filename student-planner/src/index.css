@@ -287,10 +287,16 @@ h3#toDoListTitleText {
   color: rgba(28, 17, 68);
 }
 
-.toDoListEntryItem {
+.toDoListEntryItemLow {
   font-size: 20px;
   font-family: SS Nickson One;
   color: rgba(28, 17, 68);
+  
+}
+.toDoListEntryItemHigh {
+  font-size: 20px;
+  font-family: SS Nickson One;
+  color: rgb(206, 17, 42);
 }
 
 .toDoListEntryButton {

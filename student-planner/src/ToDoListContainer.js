@@ -51,7 +51,3 @@ function ToDoListContainer() {
 }
 
 export default ToDoListContainer;
-
-// const Container = styled.div`
-// background-color: blue;
-// `

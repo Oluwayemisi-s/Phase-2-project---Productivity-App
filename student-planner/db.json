@@ -71,6 +71,12 @@
       "start": "2021-10-28T08:30:00",
       "end": "2021-10-28T09:00:00",
       "id": 24
+    },
+    {
+      "title": "Go for morning service",
+      "start": "2021-10-24T10:30:00",
+      "end": "2021-10-24T12:00:00",
+      "id": 25
     }
   ],
   "shortTermToDo": [
@@ -129,6 +135,13 @@
       "listName": "shortTermToDo",
       "completed": false,
       "id": 8
+    },
+    {
+      "item": "go over it",
+      "priority": "high",
+      "listName": "shortTermToDo",
+      "completed": false,
+      "id": 9
     }
   ],
   "longTermToDo": [
@@ -166,6 +179,20 @@
       "priority": "low",
       "completed": false,
       "listName": "longTermToDo"
+    },
+    {
+      "item": "will get to this",
+      "priority": "high",
+      "listName": "longTermToDo",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "item": "maybe i don't really need this",
+      "priority": "none",
+      "listName": "longTermToDo",
+      "completed": false,
+      "id": 7
     }
   ],
   "pinned": [
