@@ -10,6 +10,7 @@
 
 button:hover {
   cursor: pointer;
+  box-shadow: 0 0 20px white;
 } 
 
 input[type=text] {
@@ -73,14 +74,13 @@ nav a {
 .loginButton {
   float: right;
   margin: 10px;
-  background-color: rgb(177, 246, 255);
+  background-color: rgba(28, 17, 68);
   border-radius: 10px;
-  color: rgba(28, 17, 68);
+  color: white;
   padding: 5px;
-  border: 1px solid rgb(28, 17, 68);
+  border:none;
   font-family: SS Nickson One;
-  color: rgba(28, 17, 68);
-  box-shadow: 0 0 5px 2px #716a86 inset;
+  font-size: 15px;
 }
 
 #calendarSection {
@@ -109,17 +109,15 @@ label {
 #calendarSubmitButton {
   margin-top: 4px;
   margin-bottom: 0px;
-  background-color: rgb(177, 246, 255);
+  background-color: rgb(243, 160, 174);
   border-radius: 10px;
   color: rgba(28, 17, 68);
   padding: 5px;
-  border: 1px solid #716a86;
+  border: 1px solid white;
   font-family: SS Nickson One;
-  box-shadow: 0 0 5px 2px #716a86 inset;
 }
 
 #eventDetail {
-  /* background-color: rgb(177, 246, 255, .90); */
   text-align: center;
   color: rgba(28, 17, 68);
   margin-top: 0px;
@@ -145,11 +143,11 @@ button.eventDetailClass {
   margin-right: 4px;
   margin-bottom: 20px;
   margin-top: 10px;
-  background-color: rgb(177, 246, 255);
+  background-color: rgb(243, 160, 174);
   border-radius: 10px;
   color: rgba(28, 17, 68);
   padding: 5px;
-  border: 1px solid #716a86;
+  border: 1px solid white;
   font-family: SS Nickson One;
 }
 
@@ -157,6 +155,15 @@ div#calendarOnly {
   background-color: rgb(243, 193, 201);
   padding-top: 20px;
 } 
+
+.fc { /* the calendar root */
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  padding-bottom:40px;
+  font-family: SS Nickson One;
+}
+
 
 div#toDoListSection {
 display: flex;
@@ -166,7 +173,7 @@ justify-content:center;
 
 #listOptionsSection {
   border: 1px solid rgba(28, 17, 68);
-  background-color: rgb(177, 246, 255);
+  background-color: rgb(177, 246, 255, .90);
   margin: 15px;
   padding-right: 35px; 
   text-align: center;
@@ -181,14 +188,14 @@ justify-content:center;
 
 li.listOptions {
   list-style-type: none;
-  font-family: ELEGANT  Personal use;
+  font-family: SS Nickson One;
   font-size: 30px;
   color: rgba(28, 17, 68);
 }
 
 #listAndForm {
   border: 1px solid rgba(28, 17, 68);
-  background-color: rgb(177, 246, 255);
+  background-color: rgb(177, 246, 255, .90);
   margin: 15px;
   padding: 20px;
   align-items: center;
@@ -203,11 +210,13 @@ h3 {
   font-family: ELEGANT  Personal use;
   font-size: 30px;
   text-align: center;
+  color: rgba(28, 17, 68);
 }
 
 .toDoListEntryItem {
   font-size: 20px;
   font-family: SS Nickson One;
+  color: rgba(28, 17, 68);
 }
 
 .toDoListEntryButton {
@@ -233,9 +242,8 @@ h3 {
   border-radius: 10px;
   color: rgba(28, 17, 68);
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid rgba(28, 17, 68);
   font-family: SS Nickson One;
-  box-shadow: 0 0 5px 2px #130930 inset;
 }
 
 #formToDo {
@@ -244,4 +252,11 @@ h3 {
   padding: 20px; 
   margin: auto;
   font-family: SS Nickson One;
+}
+
+.fc { /* the calendar root */
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  padding-bottom:40px;
 }
