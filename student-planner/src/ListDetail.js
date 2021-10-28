@@ -28,7 +28,7 @@ function ListDetail({ entry, handleDeleteEntry }) {
     //     }
     // }
 
-        function handleCompleted(e) {
+    function handleCompleted(e) {
         const listID = e.target.name
         //console.log(listID)
         setCompleted(currentStatus => !currentStatus)

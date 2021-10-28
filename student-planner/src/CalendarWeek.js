@@ -61,7 +61,7 @@ function CalendarWeek() {
                     }}
                     headerToolbar={{
                         start: 'title',
-                        center: 'dayGridMonth,dayGridWeek,timeGridDay new',
+                        center: 'dayGridMonth,dayGridWeek,timeGridDay',
                         end: 'today prev,next'
                     }}
                     events={events}

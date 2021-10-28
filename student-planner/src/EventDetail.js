@@ -24,12 +24,12 @@ function EventDetail ({eventClick, setEventClick, title, id, start, end}) {
     }
 
     return(
-        <div>
-            <h4>Scheduled event: {title}</h4>
-            <p>On: {startDate} </p>
-            <p>At: {startTime} - (24Hr Clock)</p>
-            <button onClick = {handleKeepButtonClick}>keep Event...</button>
-            <button onClick = {handleDeleteButtonClick}>Delete Event...</button>
+        <div className="eventDetailClass" id="eventDetail">
+            <h4 className="eventDetailClass">Scheduled Event: {title}</h4>
+            <p className="eventDetailClass">On: {startDate} </p>
+            <p className="eventDetailClass">At: {startTime} (24Hr Clock)</p>
+            <button className="eventDetailClass" onClick = {handleKeepButtonClick}>Keep Event</button>
+            <button className="eventDetailClass" onClick = {handleDeleteButtonClick}>Delete Event</button>
         </div>
     )
 }
