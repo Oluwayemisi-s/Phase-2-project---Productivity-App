@@ -31,9 +31,13 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
+
+    <div id="focusSection">
         {showForm ? <PassionContentForm form = {passionForm} setForm = {setPassionForm} setPassion = {setPassion} setShowForm = {setShowForm} setPassionContent = {setPassionContent}/> : <PassionContent passion = {passion}/>}
         <button onClick = {handleHidePassionButtonClick}> {passionContent ? "Click HERE to enter a new focus and gratitude for the day!" : "Hide Form" }</button>
-        <CalendarWeek />
+        <div id="calendarSection"><CalendarWeek /></div>
+              </div>
+
         <ToDoListContainer />
       </BrowserRouter>
     </div>
