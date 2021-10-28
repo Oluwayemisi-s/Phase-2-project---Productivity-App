@@ -16,16 +16,16 @@ function ListOptions({ setList, setListType, setformView, renderToDoListTitle })
 
     return (<div className="listOptions" id="listOptionsSection">
         <ul>
-            <Link to={`/shortTermToDo`} style={{textDecoration: 'none'}} activeStyle={{ color: 'red' }}>
+            <Link to={`/shortTermToDo`} style={{ textDecoration: 'none' }} >
                 <li className="listOptions" id="shortTermToDo" onClick={handleClick}>Short Term To Dos</li>
             </Link>
-            <Link to={`/longTermToDo`} style={{textDecoration: 'none'}}>
+            <Link to={`/longTermToDo`} style={{ textDecoration: 'none' }}>
                 <li className="listOptions" id="longTermToDo" onClick={handleClick}>Long Term To Dos</li>
             </Link>
-            <Link to={`/pinned`} style={{textDecoration: 'none'}}>
+            <Link to={`/pinned`} style={{ textDecoration: 'none' }}>
                 <li className="listOptions" id="pinned" onClick={handleClick}>Pinned Items</li>
             </Link>
-            <Link to={`/shoppingList`} style={{textDecoration: 'none'}}>
+            <Link to={`/shoppingList`} style={{ textDecoration: 'none' }}>
                 <li className="listOptions" id="shoppingList" onClick={handleClick}>Shopping List</li>
             </Link>
         </ul>
