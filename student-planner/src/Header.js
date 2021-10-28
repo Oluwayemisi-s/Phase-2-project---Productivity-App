@@ -10,13 +10,14 @@ function Header() {
 
     return (
         <>
-            <h1>Your Weekly Planner</h1>
-            {logIn ? <button onClick={handleLogIn}>Log Out</button> : <button onClick={handleLogIn}>Log In</button>}
+        {logIn ? <button className="loginButton" onClick={handleLogIn}>Log Out</button> : <button className="loginButton" onClick={handleLogIn}>Log In</button>}
+        <div id="header">
+            <h1>Weekly Productivity Planner</h1>
             <nav>
-                <a href="#calendar">Calendar</a>
-                <a href="#toDoLists">To Do Lists</a>
+                <a href="#calendarSection">Calendar ○ </a>
+                <a href="#toDoListSection">To Do Lists</a>
             </nav>
-
+        </div>
         </>
     )
 }

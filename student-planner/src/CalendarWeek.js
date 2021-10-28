@@ -26,33 +26,34 @@ function CalendarWeek() {
     function handleEventClick(e) {
         //e.event.remove()
         console.log(e.event.title, e.event.start, e.event.end)
-        //alert(`This is your scheduled event:\n${e.event.title} \nOn ${e.event.start}`)
+        alert(`This is your scheduled event:\n${e.event.title} \nOn ${e.event.start}`)
     }
 
     return (
-        <div className="App">
+        <div className="App" id="calendarSection">
             <FormCalendar handleNewCalendarEntry={handleNewCalendarEntry} />
-
-            <FullCalendar
-                plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-                initialView="dayGridWeek"
-                customButtons={{
-                    new: {
-                        text: 'new',
-                        click: () => console.log('new event'),
-                    },
-                }}
-                headerToolbar={{
-                    start: 'title',
-                    center: 'dayGridMonth,dayGridWeek,timeGridDay new',
-                    end: 'today prev,next'
-                }}
-                events={events}
-                nowIndicator
-                //dateClick={(e) => console.log(e.dateStr)}
-                eventClick={handleEventClick}
-            />
-
+            <div id="calendarOnly">
+                <FullCalendar
+                    plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+                    initialView="dayGridWeek"
+                    customButtons={{
+                        new: {
+                            text: 'new',
+                            click: () => console.log('new event'),
+                        },
+                    }}
+                    headerToolbar={{
+                        start: 'title',
+                        center: 'dayGridMonth,dayGridWeek,timeGridDay',
+                        end: 'today prev,next'
+                    }}
+                    events={events}
+                    nowIndicator
+                    //dateClick={(e) => console.log(e.dateStr)}
+                    eventClick={handleEventClick}
+                    // height="100%"
+                />
+            </div>
         </div>
     );
 }

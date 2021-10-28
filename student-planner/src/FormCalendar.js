@@ -43,29 +43,28 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
     }
 
     return (
-        <div>
+        <div id="calendarForm">
             <form onSubmit={handleSubmit}>
-                <label> Enter your new Event:
+                <label> Event: 
                     <input type="text" name="title" placeholder="Enter your event here..." value={calendarFormData.title} onChange={handleCalendarFormChange} />
                 </label>
 
-                <label> Additional information:
+                {/* <label> Additional information:
                     <input type="text" name="description" placeholder="Details..." value={calendarFormData.description} onChange={handleCalendarFormChange} />
-                </label>
+                </label> */}
 
-                <br/>
 
-                <label> Start Date and Time:
+                <label> Start Date/Time: 
                     <input type="datetime" name="start" placeholder = "2021-10-25, 10:30:00" value={calendarFormData.start} onChange={handleCalendarFormChange} />
                 </label>
                 
-                <label> Enter End Date and Time:
+                <label> End Date/Time: 
                     <input type="datetime" name="end" placeholder = "2021-10-25, 10:30:00" value={calendarFormData.end} onChange={handleCalendarFormChange} />
                 </label>
 
-                <br/>
+
                 
-                <button type="submit"> Submit </button>
+                <button type="submit" id="calendarSubmitButton"> Submit </button>
             </form>
         </div>
     )

@@ -38,9 +38,10 @@ function ListDetail({ entry, handleDeleteEntry }) {
 
     return (
         <div>
-            <li>{entry.item}
-                <button name={entry.listName} onClick={handleDelete}>Delete</button>
-                <button name = {entry.listName} onClick={handleCompleted}>{completed ? "Mark as incomplete" : "Mark as Complete"}</button>
+            <li className="toDoListEntryItem">{entry.item}
+            <button className="toDoListEntryButton" name = {entry.listName} onClick={handleCompleted}>{completed ? "Mark as incomplete" : "Mark as Complete"}</button>
+
+                <button className="toDoListEntryButton" name={entry.listName} onClick={handleDelete}>Delete</button>
             </li>
         </div>)
 }
