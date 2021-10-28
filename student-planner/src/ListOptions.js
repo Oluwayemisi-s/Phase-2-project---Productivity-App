@@ -15,7 +15,7 @@ function ListOptions({ setList, setListType, setformView, renderToDoListTitle })
     };
 
     return (<div className="listOptions" id="listOptionsSection">
-        <ul>
+        <ul id="listOfToDoLists">
             <Link to={`/shortTermToDo`} style={{ textDecoration: 'none' }} >
                 <li className="listOptions" id="shortTermToDo" onClick={handleClick}>Short Term To Dos</li>
             </Link>

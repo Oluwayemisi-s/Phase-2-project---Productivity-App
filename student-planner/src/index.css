@@ -12,6 +12,24 @@ button:hover {
   cursor: pointer;
 } 
 
+input[type=text] {
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size:18px;
+}
+
+input[type=datetime] {
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size:18px;
+}
+
+select {
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size:18px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -65,13 +83,17 @@ nav a {
   box-shadow: 0 0 5px 2px #716a86 inset;
 }
 
-#calendarForm {
+#calendarSection {
   background-color: rgb(243, 160, 174, .90);
+}
+
+#calendarForm {
+  /* background-color: rgb(243, 160, 174, .90); */
   text-align:center;
   color: rgba(28, 17, 68);
   padding: 20px; 
   /* width: 80%; */
-  margin: auto;
+  margin-bottom: 0px;
   font-family: SS Nickson One;
 
 }
@@ -96,6 +118,41 @@ label {
   box-shadow: 0 0 5px 2px #716a86 inset;
 }
 
+#eventDetail {
+  /* background-color: rgb(177, 246, 255, .90); */
+  text-align: center;
+  color: rgba(28, 17, 68);
+  margin-top: 0px;
+  border: 1px solid white;
+}
+
+h4.eventDetailClass {
+  font-family: ELEGANT  Personal use;
+  font-size: 24px;
+  margin-bottom: 0;
+
+}
+
+p.eventDetailClass {
+  font-family: SS Nickson One;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button.eventDetailClass {
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-color: rgb(177, 246, 255);
+  border-radius: 10px;
+  color: rgba(28, 17, 68);
+  padding: 5px;
+  border: 1px solid #716a86;
+  font-family: SS Nickson One;
+}
+
 div#calendarOnly {
   background-color: rgb(243, 193, 201);
   padding-top: 20px;
@@ -115,6 +172,12 @@ justify-content:center;
   text-align: center;
   border-radius: 20px;
 }
+
+/* #listOfToDoLists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 li.listOptions {
   list-style-type: none;
