@@ -1,16 +1,12 @@
-import { useEffect, useState } from "react"
+import PassionContentDetail from "./PassionContentDetail"
 
-function PassionContent () {
-    const [dayFocus, setDayFocus] = useState(null)
-    const [gratitude, setGratitude] = useState(null)
+function PassionContent ({passion}) {
+    console.log(passion)
+    const pass = passion.map(item => <PassionContentDetail key = {item.id} item = {item}/>)
 
     return(
         <div> 
-           <form> 
-               <label>Enter your focus for the day:
-                <input type = "text" name = "focus"/>
-                </label>
-            </form>
+            {pass}
         </div>
     )
 }
