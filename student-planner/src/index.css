@@ -100,10 +100,10 @@ nav a {
   border: 1px solid rgba(28, 17, 68);
 }
 
-button[type=submit]#focusSectionButton {
+button#passionFormView {
   margin-top: 4px;
   margin-bottom: 0px;
-  background-color: rgb(243, 160, 174);
+  background-color: rgb(115, 250, 221);
   border-radius: 10px;
   color: rgba(28, 17, 68);
   padding: 5px;
@@ -115,7 +115,12 @@ button[type=submit]#focusSectionButton {
   display: flex;
   flex-direction: column;
   justify-content:center;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-end;
+  color: rgba(28, 17, 68);
+  font-size: 25;
+  padding: 20px;
+  margin-right: 25%;
 }
 
  #focusDetail {
@@ -147,7 +152,7 @@ h3.focusDetailTextGratitude {
 }
 
 button#passionFormSubmit {
-  margin-top: 4px;
+  margin-top: 10px;
   margin-bottom: 0px;
   background-color: rgb(115, 250, 221);
   border-radius: 10px;
@@ -155,6 +160,9 @@ button#passionFormSubmit {
   padding: 5px;
   border: 1px solid white;
   font-family: SS Nickson One;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 64.5%;
 }
 
 #calendarSection {
@@ -252,6 +260,9 @@ margin-top: 40px;
   padding-right: 35px; 
   text-align: center;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* #listOfToDoLists {
@@ -296,7 +307,7 @@ h3#toDoListTitleText {
 .toDoListEntryItemHigh {
   font-size: 20px;
   font-family: SS Nickson One;
-  color: rgb(206, 17, 42);
+  color: rgb(240, 25, 97);
 }
 
 .toDoListEntryButton {

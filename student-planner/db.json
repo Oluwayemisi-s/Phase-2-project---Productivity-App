@@ -77,6 +77,18 @@
       "start": "2021-10-24T10:30:00",
       "end": "2021-10-24T12:00:00",
       "id": 25
+    },
+    {
+      "title": "testlisa",
+      "start": "2021-10-29T 13:00",
+      "end": "T",
+      "id": 26
+    },
+    {
+      "title": "testlisa2",
+      "start": "2021-10-29T 13:30:00",
+      "end": "T",
+      "id": 27
     }
   ],
   "shortTermToDo": [
@@ -279,8 +291,8 @@
   "passion": [
     {
       "id": 1,
-      "focus": "Eat healthy meals and be kind to others.",
-      "grateful": "I am grateful for my family!"
+      "focus": "",
+      "grateful": ""
     }
   ]
 }
