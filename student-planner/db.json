@@ -137,11 +137,18 @@
       "id": 8
     },
     {
-      "item": "go over it",
+      "item": "will get to this",
       "priority": "high",
       "listName": "shortTermToDo",
       "completed": false,
       "id": 9
+    },
+    {
+      "item": "i need to complete this",
+      "priority": "low",
+      "listName": "shortTermToDo",
+      "completed": false,
+      "id": 10
     }
   ],
   "longTermToDo": [
@@ -149,7 +156,7 @@
       "id": 1,
       "item": "Research blog topic",
       "priority": "high",
-      "completed": false,
+      "completed": true,
       "listName": "longTermToDo"
     },
     {
@@ -260,13 +267,20 @@
       "listName": "shoppingList",
       "completed": true,
       "priority": "none"
+    },
+    {
+      "item": "Eggs",
+      "priority": "none",
+      "listName": "shoppingList",
+      "completed": false,
+      "id": 8
     }
   ],
   "passion": [
     {
       "id": 1,
-      "focus": "focus on my project",
-      "grateful": "grateful for my health"
+      "focus": "Eat healthy meals and be kind to others.",
+      "grateful": "I am grateful for my family!"
     }
   ]
 }
