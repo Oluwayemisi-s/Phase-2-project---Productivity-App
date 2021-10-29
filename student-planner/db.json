@@ -65,6 +65,18 @@
       "start": "2021-10-27T08:30:00",
       "end": "2021-10-27T09:00:00",
       "id": 30
+    },
+    {
+      "title": "sister in town (slumber party!)",
+      "start": "2021-10-29T17:00:00",
+      "end": "2021-10-30T11:00:00",
+      "id": 31
+    },
+    {
+      "title": "Trivia Night at Chimes",
+      "start": "2021-10-25T18:00:00",
+      "end": "2021-10-25T21:00:00",
+      "id": 32
     }
   ],
   "shortTermToDo": [
@@ -100,7 +112,7 @@
       "id": 5,
       "item": "Schedule 1:1 with Tarric",
       "priority": "low",
-      "completed": true,
+      "completed": false,
       "listName": "shortTermToDo"
     },
     {
@@ -130,13 +142,6 @@
       "listName": "shortTermToDo",
       "completed": false,
       "id": 9
-    },
-    {
-      "item": "i need to complete this",
-      "priority": "low",
-      "listName": "shortTermToDo",
-      "completed": false,
-      "id": 10
     }
   ],
   "longTermToDo": [
@@ -193,16 +198,16 @@
   "pinned": [
     {
       "id": 1,
-      "item": "Lecture Notes https://docs.google.com/document/d/1CpQHvXvFbtI9YWj4tR15EkQqgBB0OUbug8TmGLlOG4k/edit#heading=h.ny484nbphjgi",
+      "item": "Blog Group B - Oct 28th, Nov 12th, Nov 24th, Dec 9th",
       "listName": "pinned",
       "completed": false,
       "priority": "none"
     },
     {
       "id": 2,
-      "item": "Daily Zoom link https://flatironschool.zoom.us/j/93421096785?pwd=WktTSUtKV2c5NUtTdURKYXF3enVxZz09",
+      "item": "Algo Date: Nov 1",
       "listName": "pinned",
-      "completed": true,
+      "completed": false,
       "priority": "none"
     },
     {
@@ -267,8 +272,8 @@
   "passion": [
     {
       "id": 1,
-      "focus": "hi hi hi",
-      "grateful": "no no no"
+      "focus": "testtttt",
+      "grateful": "test again"
     }
   ]
 }
