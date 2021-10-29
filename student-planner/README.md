@@ -36,6 +36,12 @@
 # Learnings and Struggles:
     One major thing we struggled with and learned during the development of this project was the use of an external library, specifically understanding its extensive documentation and applying its built-in functions, methods, and props to the desired features of our project. Doing this was particularly challenging because this was our first experience using a library other than React, but we were able to accomplish basic functionality and learned a great deal along the way.
 
+    Goals for Future Iterations:
+    - Login functionality
+    - User add custom list
+    - More goal and habit tracking features
+    - Fix known bugs
+
     Known Bugs: 
     - If a new event is added to the calendar immediately after deleting an event from the calendar, the deleted event returns to the DOM on form submit of the new event. The page must be refreshed for both the deleted event to disappear and the new event to display.
 
