@@ -26,29 +26,13 @@ function CalendarWeek() {
     }
 
     function handleEventClick(e) {
-
         setEventClick(e)
-        //console.log(e.event.start)
-        //alert(`This is your scheduled event:\n${e.event.title} \nOn ${e.event.start}`)
-        //console.log("title:", e.event.title, "ID:", e.event.id, "start time:", e.event.start, "end time:", e.event.end)
-        //e.event.remove()
-        //console.log(e.event.remove())
-        //console.log(e.event)
-
-    }
-
-    function handleShowEvent(e) {
-        //console.log(e)
-        // return(
-
-        //     <small>{e.event.title}</small>
-        // )
     }
 
     return (
         <div className="App">
             <FormCalendar handleNewCalendarEntry={handleNewCalendarEntry} />
-            {eventClick ? <EventDetail eventClick={eventClick} setEventClick={setEventClick} title={eventClick.event.title} id={eventClick.event.id} start={eventClick.event.startStr} end={eventClick.event.endStr} /> : null}
+            {eventClick ? <EventDetail eventClick={eventClick} setEventClick={setEventClick} title={eventClick.event.title} id={eventClick.event.id} start={eventClick.event.startStr} events = {events} setEvents = {setEvents}/> : null}
             <div id="calendarOnly">
                 <FullCalendar
                     plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
@@ -68,9 +52,6 @@ function CalendarWeek() {
                     nowIndicator
                     editable={true}
                     selectable={true}
-                    //dateClick={(e) => console.log(e.dateStr)}
-                    //eventClick={handleEventClick}
-                    eventContent={handleShowEvent}
                     eventClick={handleEventClick}
                 />
             </div>

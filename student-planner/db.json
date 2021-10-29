@@ -61,16 +61,10 @@
       "id": 27
     },
     {
-      "title": "Trivia Night at Chimes",
-      "start": "2021-10-25T 18:00:00",
-      "end": "2021-10-25T 22:00:00",
-      "id": 28
-    },
-    {
-      "title": "testing",
-      "start": "2021-10-27T 05:00:00",
-      "end": "2021-10-27T 06:00:00",
-      "id": 29
+      "title": "go away",
+      "start": "2021-10-27T08:30:00",
+      "end": "2021-10-27T09:00:00",
+      "id": 30
     }
   ],
   "shortTermToDo": [
@@ -78,7 +72,7 @@
       "id": 1,
       "item": "Read through Introduction to Client-Side Routing",
       "priority": "high",
-      "completed": false,
+      "completed": true,
       "listName": "shortTermToDo"
     },
     {
@@ -106,7 +100,7 @@
       "id": 5,
       "item": "Schedule 1:1 with Tarric",
       "priority": "low",
-      "completed": false,
+      "completed": true,
       "listName": "shortTermToDo"
     },
     {
@@ -273,8 +267,8 @@
   "passion": [
     {
       "id": 1,
-      "focus": "test",
-      "grateful": "test"
+      "focus": "hi hi hi",
+      "grateful": "no no no"
     }
   ]
 }

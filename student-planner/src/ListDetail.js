@@ -4,7 +4,7 @@ import { useState } from "react"
 function ListDetail({ entry, handleDeleteEntry }) {
 
     const [completed, setCompleted] = useState(entry.completed)
-    const [completedIdName, setCompletedIdName] = useState(false)
+    //const [completedIdName, setCompletedIdName] = useState(false)
     const priority = entry.priority
 
     function handleDelete(e) {
@@ -21,7 +21,7 @@ function ListDetail({ entry, handleDeleteEntry }) {
         const listID = e.target.name
         //console.log(listID)
         setCompleted(currentStatus => !currentStatus)
-        setCompletedIdName(currentID => !currentID)
+        //setCompletedIdName(currentID => !currentID)
         let status = !completed
         //console.log(status)
         // completeCrossOut()
@@ -39,7 +39,7 @@ function ListDetail({ entry, handleDeleteEntry }) {
 
     return (
         <div>
-            <li id={completedIdName ? "complete" : "incomplete"} className={priority === "low" || priority === "none" ? "toDoListEntryItemLow" : "toDoListEntryItemHigh" } >{entry.item}
+            <li id={completed ? "complete" : "incomplete"} className={priority === "low" || priority === "none" ? "toDoListEntryItemLow" : "toDoListEntryItemHigh" } >{entry.item}
                 <button className="toDoListEntryButton" name={entry.listName} onClick={handleCompleted}>{completed ? "Mark as incomplete" : "Mark as Complete"}</button>
 
                 <button className="toDoListEntryButton" name={entry.listName} onClick={handleDelete}>Delete</button>
