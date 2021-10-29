@@ -41,11 +41,11 @@ export default function PassionContentForm ({form, form : {focus, grateful}, set
         <div> 
         <form id="passionContentForm" onSubmit = {handleSubmit}> 
             <label>Enter your focus for the day:
-                <input type = "text" name = "focus" value = {focus} onChange = {handleFormInput}/>
+                <input className="passionForm" type = "text" name = "focus" value = {focus} onChange = {handleFormInput}/>
             </label>
 
             <label>What are you grateful for today?
-                <input name = "grateful" type = "text" value = {grateful} onChange = {handleFormInput}/>
+                <input className="passionForm" name = "grateful" type = "text" value = {grateful} onChange = {handleFormInput}/>
             </label>
             <button id="passionFormSubmit">Submit</button>
         </form>
