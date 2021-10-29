@@ -18,11 +18,11 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
         e.preventDefault()
         let startDateAndTime = calendarFormData.start
         let endDateAndTime = calendarFormData.end
-        const startDate = startDateAndTime.slice(0,10)
+        const startDate = startDateAndTime.slice(0, 10)
         const startTime = startDateAndTime.slice(11)
-        const endDate = endDateAndTime.slice(0,10)
+        const endDate = endDateAndTime.slice(0, 10)
         const endTime = endDateAndTime.slice(11)
-        
+
         const entryData = {
             title: calendarFormData.title,
             description: calendarFormData.description,
@@ -51,7 +51,7 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
     return (
         <div id="calendarForm">
             <form onSubmit={handleSubmit}>
-                <label> Event: 
+                <label> Event:
                     <input type="text" name="title" placeholder="Enter your event here..." value={calendarFormData.title} onChange={handleCalendarFormChange} />
                 </label>
 
@@ -59,17 +59,17 @@ function FormCalendar({ listType, handleNewCalendarEntry }) {
                     <input type="text" name="description" placeholder="Details..." value={calendarFormData.description} onChange={handleCalendarFormChange} />
                 </label> */}
 
-                <label> Start Date/Time: 
-                    <input type="datetime" name="start" placeholder = "2021-10-25, 10:30:00" value={calendarFormData.start} onChange={handleCalendarFormChange} />
-                </label>
-                
-                <label> End Date/Time: 
-                    <input type="datetime" name="end" placeholder = "2021-10-25, 10:30:00" value={calendarFormData.end} onChange={handleCalendarFormChange} />
+                <label> Start Date/Time:
+                    <input type="datetime" name="start" placeholder="2021-10-25,10:30:00" value={calendarFormData.start} onChange={handleCalendarFormChange} />
                 </label>
 
+                <label> End Date/Time:
+                    <input type="datetime" name="end" placeholder="2021-10-25,10:30:00" value={calendarFormData.end} onChange={handleCalendarFormChange} />
+                </label>
 
 
-                
+
+
                 <button type="submit" id="calendarSubmitButton"> Submit </button>
             </form>
         </div>
