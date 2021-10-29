@@ -1,11 +1,10 @@
 
 
-function EventDetail ({eventClick, setEventClick, title, id, start, end}) {
+function EventDetail ({eventClick, setEventClick, title, id, start}) {
     
     console.log(eventClick.event)
     const startDate = start.slice(0,10)
     const startTime = start.slice(11,19)
-    //const startDateAndTime = eventClick.event.start
     
     function handleDeleteButtonClick () {
         fetch(`http://localhost:5000/events/${id}`,{
@@ -16,6 +15,9 @@ function EventDetail ({eventClick, setEventClick, title, id, start, end}) {
             console.log("deleted")
             eventClick.event.remove();
             setEventClick(null)
+            //handle deleting
+            // const filteredEvents = (id) => events.filter(event => id !== event.id )
+            // setEvents(filteredEvents)
         })
     }
 

@@ -33,6 +33,7 @@ export default function PassionContentForm ({form, form : {focus, grateful}, set
               })
             alert("Your new entry has been logged")
             setShowForm(current => !current)
+            setPassionContent(current => !current)
         })
 
     }
