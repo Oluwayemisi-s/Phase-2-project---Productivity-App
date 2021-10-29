@@ -115,7 +115,6 @@ button#passionFormView {
   display: flex;
   flex-direction: column;
   justify-content:center;
-  /* align-items: center; */
   align-items: flex-end;
   color: rgba(28, 17, 68);
   font-size: 25;
@@ -162,11 +161,11 @@ button#passionFormSubmit {
   font-family: SS Nickson One;
   display: flex;
   align-self: flex-start;
-  margin-left: 64.5%;
+  margin-left: 64.5%; 
 }
 
 #calendarSection {
-  background-color: rgb(243, 160, 174, .90);
+  /* background-color: rgb(243, 160, 174, .90); */
 }
 
 #calendarForm {
@@ -242,7 +241,6 @@ div#calendarOnly {
   height: 400px;
   margin: 0 auto;
   padding-bottom:40px;
-  font-family: SS Nickson One;
   font-family: cream-DEMO;
 }
 
@@ -265,11 +263,6 @@ margin-top: 40px;
   align-items: center;
 }
 
-/* #listOfToDoLists {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 li.listOptions {
   list-style-type: none;
